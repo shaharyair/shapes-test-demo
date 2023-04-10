@@ -1,0 +1,186 @@
+.app {
+}
+
+.app__container {
+  margin: 5rem 0;
+  display: grid;
+  place-items: center;
+  gap: 5rem;
+}
+
+.slider__container {
+  display: grid;
+  place-items: center;
+  direction: rtl;
+  font-size: 2rem;
+  gap: 1rem;
+}
+
+.shapes__container {
+  display: grid;
+  justify-content: center;
+  align-items: end;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: repeat(3, auto);
+  grid-column-gap: 3rem;
+  font-size: 4rem;
+  background: lightgrey;
+  border-radius: 5rem;
+  padding: 5rem;
+}
+
+.triangle1,
+.triangle2,
+.triangle3,
+.triangle4,
+.triangle5,
+.square1,
+.shape__main,
+.shape1 {
+  background-color: darkblue;
+}
+
+.triangle1,
+.triangle2,
+.triangle3,
+.triangle4,
+.triangle5,
+.square1,
+.shape1 {
+  cursor: pointer;
+  color: white;
+}
+
+.triangle1:hover,
+.triangle2:hover,
+.triangle3:hover,
+.triangle4:hover,
+.triangle5:hover,
+.square1:hover,
+.shape1:hover,
+.shape__active {
+  background-color: rgb(92, 92, 189);
+  transition: background-color 0.5s ease;
+}
+
+.triangle2,
+.shape1 {
+  position: relative;
+  top: 97%;
+}
+
+.triangle1 {
+  grid-column: 1;
+  grid-row: 3;
+  width: 20rem;
+  height: 20rem;
+  clip-path: polygon(0 0, 0% 100%, 100% 100%);
+}
+
+.triangle1 > p {
+  position: relative;
+  top: 60%;
+  left: 20%;
+}
+
+.triangle2 {
+  grid-column: 1;
+  grid-row: 2;
+  width: 20rem;
+  height: 20rem;
+  clip-path: polygon(0 0, 100% 0, 100% 100%);
+}
+
+.triangle2 > p {
+  position: relative;
+  top: 15%;
+  left: 60%;
+}
+
+.shape1 {
+  grid-column: 2;
+  grid-row: 2;
+  width: 18rem;
+  height: 18rem;
+  clip-path: polygon(0 50%, 50% 0, 50% 50%, 0 100%);
+}
+
+.shape1 > p {
+  position: relative;
+  top: 35%;
+  left: 18%;
+}
+
+.triangle3 {
+  grid-column: 2;
+  grid-row: 3;
+  width: 15rem;
+  height: 15rem;
+  clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+}
+
+.triangle3 > p {
+  position: relative;
+  top: 50%;
+  left: 65%;
+}
+
+.square1 {
+  grid-column: 3;
+  grid-row: 3;
+  width: 10rem;
+  height: 10rem;
+  display: grid;
+  place-items: center;
+}
+
+.triangle4 {
+  grid-column: 3;
+  grid-row: 2;
+  width: 10rem;
+  height: 10rem;
+  clip-path: polygon(0 0, 0% 100%, 100% 100%);
+  position: relative;
+  top: 47%;
+}
+
+.triangle4 > p {
+  position: relative;
+  top: 40%;
+  left: 10%;
+}
+
+.triangle5 {
+  grid-column: 3;
+  grid-row: 2;
+  width: 10rem;
+  height: 10rem;
+  clip-path: polygon(0 0, 100% 0, 100% 100%);
+  position: relative;
+  top: 45%;
+}
+
+.triangle5 > p {
+  position: relative;
+  left: 50%;
+}
+
+.shape__main {
+  grid-column: 4;
+  grid-row: 1/4;
+  width: 45rem;
+  height: 35rem;
+  clip-path: polygon(
+    60% 0,
+    90% 0,
+    75% 15%,
+    75% 60%,
+    100% 100%,
+    60% 100%,
+    60% 71%,
+    40% 100%,
+    39% 82%,
+    0 41%,
+    60% 41%
+  );
+}

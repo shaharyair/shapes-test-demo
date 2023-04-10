@@ -1,0 +1,6 @@
+.slider {
+  display: grid;
+  place-items: center;
+  grid-gap: 1rem;
+  direction: ltr;
+}
